@@ -20,9 +20,6 @@ public class BrowserDriver {
         } else if (os.contains("mac")) {
             System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +
                     "/src/test/resources/driver/chromedriver");
-        } else if (os.contains("nix") || os.contains("nux")) {
-            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +
-                    "/src/test/resources/driver/chromedriver_linux");
         }
 
         ChromeOptions options = new ChromeOptions();
